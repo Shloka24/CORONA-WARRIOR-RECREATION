@@ -58,7 +58,6 @@ function draw(){
   background("skyblue");
   
   camera.position.x = windowWidth/2;
-  camera.position.y = runner.y;
   
   if(gameState === PLAY){
     
