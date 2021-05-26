@@ -58,6 +58,7 @@ function draw(){
   background("skyblue");
   
   camera.position.x = windowWidth/2;
+  camera.position.y = runner.y;
   
   if(gameState === PLAY){
     
@@ -74,7 +75,7 @@ function draw(){
   
   runner.collide(invisibleGround);
   
-  if(touches.length>0 || keyDown("space") && runner.y >=100){
+  if(touches.length>0 || keyDown("space") && runner.y >=600){
     runner.velocityY = -18;
     jumpSound.play();
     touches = [];
